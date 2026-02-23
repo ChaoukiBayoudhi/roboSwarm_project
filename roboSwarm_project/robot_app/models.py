@@ -33,7 +33,7 @@ class Robot(models.Model):
         ]
         constraints=[
             models.UniqueConstraint(fields=['name','serial_number'],
-            name='unique_robot',)        
+            name='unique_robot',),        
             ]
 
     
