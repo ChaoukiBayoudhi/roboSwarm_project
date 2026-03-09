@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'robot_app',
+    'drone_app',
+    'mission_app',
 ]
 
 MIDDLEWARE = [
