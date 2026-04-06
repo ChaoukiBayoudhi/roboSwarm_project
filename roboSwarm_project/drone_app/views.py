@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from .models import Drone
+from .serializers import DroneSerializer
+
+
+class DroneViewSet(viewsets.ModelViewSet):
+    queryset = Drone.objects.all()
+    serializer_class = DroneSerializer
