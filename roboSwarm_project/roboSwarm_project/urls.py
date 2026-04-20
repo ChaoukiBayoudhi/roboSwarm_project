@@ -19,7 +19,5 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/robots', include('robot_app.urls')),
-    path('api/drones', include('drone_app.urls')),
-    path('api/missions', include('mission_app.urls')),
+    path('api/', include('roboSwarm_project.api_urls')),
 ]
